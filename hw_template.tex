@@ -1,5 +1,6 @@
 \documentclass{article}
 \usepackage{amsmath}
+\usepackage{amssymb}
 \usepackage{fancyhdr}
 \usepackage[margin=1in]{geometry}
 \usepackage{titling}
@@ -23,7 +24,10 @@
 %\renewcommand{\thesubsection}{\thesection.\alph{subsection}}
 %\renewcommand{\thesubsubsection}{\thesubsection.\roman{subsubsection}}
 
-
+% Proof commands
+\newcommand{\claim}[1]{\paragraph{} \textbf{\underline{\smash{Claim (#1).}}} }
+\newcommand{\lemma}[1]{\paragraph{} \textbf{\underline{\smash{Lemma (#1).}}} }
+\newcommand{\proof}{\paragraph{} \textbf{\underline{\smash{Proof.}}} }
 
 % Clear header
 \fancyhead{}
