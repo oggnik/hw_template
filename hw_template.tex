@@ -24,6 +24,41 @@
 %\renewcommand{\thesubsection}{\thesection.\alph{subsection}}
 %\renewcommand{\thesubsubsection}{\thesubsection.\roman{subsubsection}}
 
+% Real number symbol (lets you use \R instead of \mathbb{R}).
+\newcommand{\R}{\mathbb{R}}
+
+% Multipart equations from https://www.johndcook.com/blog/2009/09/14/latex-multi-part-definitions/
+\newcommand{\twopartdef}[4]
+{
+	\left\{
+	\begin{array}{ll}
+		#1 & \mbox{if } #2 \\
+		#3 & \mbox{if } #4
+	\end{array}
+	\right.
+}
+\newcommand{\threepartdef}[6]
+{
+	\left\{
+	\begin{array}{lll}
+		#1 & \mbox{if } #2 \\
+		#3 & \mbox{if } #4 \\
+		#5 & \mbox{if } #6
+	\end{array}
+	\right.
+}
+\newcommand{\fourpartdef}[8]
+{
+	\left\{
+	\begin{array}{lll}
+		#1 & \mbox{if } #2 \\
+		#3 & \mbox{if } #4 \\
+		#5 & \mbox{if } #6 \\
+		#7 & \mbox{if } #8
+	\end{array}
+	\right.
+}
+
 % Proof commands
 \newcommand{\claim}[1]{\paragraph{} \textbf{\underline{\smash{Claim (#1).}}} }
 \newcommand{\lemma}[1]{\paragraph{} \textbf{\underline{\smash{Lemma (#1).}}} }
